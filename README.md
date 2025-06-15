@@ -14,6 +14,7 @@ The main goal is to predict whether a team wins a game or not. So, loses and dra
 ## Model
 * We used 55 features, including metrics such as xG (expected goals), xA (expected assists), GA (goals against), GF (goals for), and others for each Premier League team to train our model.
 * A Random Forest Classifier with 50 decision trees was used to power the predictions.
+* Weights are given to different seasons to train our model effectively. The older seasons were given lower weights and the recent seasons were given a higher weight.
 
 ## Results
 The model achieved 68.1% accuracy, measured using precision, F1 score, and recall.
